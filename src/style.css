@@ -91,7 +91,7 @@ main .top .top_inner {
   position: relative;
 }
 main .top .container {
-  height: 670px;
+  height: 620px;
   max-width: 1180px;
   padding-left: 10px;
   padding-right: 10px;
@@ -127,8 +127,52 @@ main .top .container .top_img {
   left: 240px;
   top: -200px;
 }
-main .aboutus {
+main .about {
+  color: white;
   background-color: #BEA495;
+  height: 535px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+main .about .container {
+  position: relative;
+  max-width: 1180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+main .about .container .about_content .about_tittle {
+  margin: 0;
+  margin-top: 128px;
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+main .about .container .about_content .about_text {
+  margin-top: 15px;
+  width: 360px;
+}
+main .about .container .about_list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  top: -130px;
+  left: 400px;
+  gap: 20px;
+}
+main .about .container .about_list .about_item .about_img-text {
+  font-size: 11px;
+  margin: 0px;
+  margin-top: 10px;
+}
+main .about .container .about_string {
+  position: absolute;
+  left: 370px;
+  top: 280px;
 }
 
 footer {
@@ -202,6 +246,17 @@ footer .container .footer_contact ul {
   main .top .container .top_img .top_img-x {
     width: 655px;
   }
+  main .about .container {
+    max-width: 960px;
+    margin: 0 20px;
+    padding: 0px;
+  }
+  main .about .container .about_content .about_text {
+    width: 299px;
+  }
+  main .about .container .about_list {
+    left: 320px;
+  }
   footer .container {
     max-width: 960px;
     margin: 0 20px;
@@ -255,6 +310,42 @@ footer .container .footer_contact ul {
   }
   main .top .container .top_img {
     left: 180px;
+  }
+  main .about {
+    height: 364px;
+  }
+  main .about .container {
+    max-width: 640px;
+    margin: 0 64px;
+    padding: 0px;
+  }
+  main .about .container .about_content .about_tittle {
+    margin-top: 52px;
+    font-size: 15px;
+  }
+  main .about .container .about_content .about_text {
+    width: 199px;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+  main .about .container .about_list {
+    top: -60px;
+  }
+  main .about .container .about_list .about_item .about_img-text {
+    font-size: 6px;
+  }
+  main .about .container .about_list .about_item .about_img1 {
+    width: 120px;
+  }
+  main .about .container .about_list .about_item .about_img2 {
+    width: 191px;
+  }
+  main .about .container .about_list .about_item .about_img3 {
+    width: 121px;
+  }
+  main .about .container .about_string {
+    top: 180px;
+    left: 280px;
   }
   footer {
     font-size: 10px;
@@ -355,6 +446,25 @@ footer .container .footer_contact ul {
   main .top .container .top_img {
     top: -82px;
   }
+  main .about .container {
+    max-width: 640px;
+    margin: 0 10px;
+  }
+  main .about .container .about_content .about_tittle {
+    margin-top: 0;
+  }
+  main .about .container .about_list {
+    align-items: end;
+    top: -20px;
+    left: 220px;
+  }
+  main .about .container .about_list .about_item .about_img-text {
+    display: none;
+  }
+  main .about .container .about_string {
+    top: 200px;
+    left: 210px;
+  }
   footer {
     font-size: 14px;
     line-height: 1.2;
@@ -394,6 +504,28 @@ footer .container .footer_contact ul {
   main .top .container .top_img .top_img-x {
     width: 309px;
   }
+  main .about {
+    height: 313px;
+  }
+  main .about .container .about_content .about_text {
+    width: 172px;
+  }
+  main .about .container .about_list {
+    top: 20px;
+    left: 180px;
+  }
+  main .about .container .about_list .about_item .about_img1 {
+    width: 80px;
+  }
+  main .about .container .about_list .about_item .about_img2 {
+    width: 140px;
+  }
+  main .about .container .about_list .about_item .about_img3 {
+    width: 80px;
+  }
+  main .about .container .about_string {
+    left: 175px;
+  }
 }
 @media (max-width: 360px) {
   main .top .container {
@@ -416,5 +548,27 @@ footer .container .footer_contact ul {
   }
   main .top .container .top_img .top_img-x {
     width: 180px;
+  }
+  main .about {
+    height: 172px;
+    padding-top: 20px;
+  }
+  main .about .container .about_content .about_text {
+    width: 233px;
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  main .about .container .about_list {
+    left: 245px;
+  }
+  main .about .container .about_list .about_item .about_img2 {
+    display: none;
+  }
+  main .about .container .about_list .about_item .about_img3 {
+    display: none;
+  }
+  main .about .container .about_string {
+    left: 240px;
+    top: 110px;
   }
 }/*# sourceMappingURL=style.css.map */

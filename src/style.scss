@@ -95,7 +95,7 @@ main{
             position: relative;
         }
         .container{
-            height: 670px;
+            height: 620px;
             max-width: 1180px;
             padding-left: 10px;
             padding-right: 10px;
@@ -136,8 +136,57 @@ main{
         }
 
     }
-    .aboutus{
+    .about{
+        color: white;
         background-color: #BEA495;
+        height: 535px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        .container{
+            position: relative;
+            max-width: 1180px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0 auto;
+            .about_content{
+                .about_tittle{
+                    margin: 0;
+                    margin-top: 128px;
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+                .about_text{
+                    margin-top: 15px;
+                    width: 360px;
+                }
+            }
+            .about_list{
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                align-items: center;
+                top: -130px;
+                left: 400px;
+                gap: 20px;
+                .about_item{
+                    .about_img-text{
+                        font-size: 11px;
+                        margin: 0px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .about_string{
+                position: absolute;
+                left:370px;
+                top:280px;
+            }
+
+        }
     }
 }
 
@@ -234,6 +283,26 @@ footer{
             }
 
         }
+        .about{
+            
+            .container{
+                max-width: 960px;
+                margin:0 20px;
+                padding: 0px;
+                
+                .about_content{
+                    
+                    .about_text{
+                        width: 299px;
+                    }
+
+                }
+                .about_list{
+                    left:320px;
+                }
+                
+            }
+        }
         
     }
     footer{
@@ -302,6 +371,49 @@ footer{
                 }
                 .top_img{
                     left:180px;
+                }
+            }
+        }
+        .about{
+            height: 364px;
+            .container{
+                max-width: 640px;
+                margin:0 64px;
+                padding: 0px;
+                .about_content{
+                    .about_tittle{
+                        margin-top: 52px;
+                        font-size: 15px;
+                    }
+                    .about_text{
+                        width: 199px;
+                        font-size: 10px;
+                        margin-top:20px;
+                    }
+
+                }
+                .about_list{
+                    top: -60px;
+                    .about_item{
+                        .about_img-text{
+                            font-size: 6px;
+                        }
+                        .about_img1{
+                            width: 120px;
+                        }
+                        .about_img2{
+                            width: 191px;
+                        }
+                        .about_img3{
+                            width: 121px;
+                        }
+                    }
+
+                }
+                .about_string{
+                    top:180px;
+                    left:280px
+                    
                 }
             }
         }
@@ -424,6 +536,34 @@ footer{
                 }
             }
         }
+        .about{
+            .container{
+                max-width: 640px;
+                margin:0 10px;
+                .about_content{
+                    .about_tittle{
+                        margin-top: 0;
+                    }
+
+                }
+                .about_list{
+                    align-items: end;
+                    top:-20px;
+                    left:220px;
+                    .about_item{
+                        .about_img-text{
+                            display: none;
+                        }
+                    }
+
+                }
+                .about_string{
+                    top:200px;
+                    left:210px;
+                    
+                }
+            }
+        }
     }
     footer{
         font-size: 14px;
@@ -479,6 +619,38 @@ footer{
                 }
             }
         }
+        .about{
+            height: 313px;
+            .container{
+                .about_content{
+                    .about_text{
+                        width: 172px;
+                    }
+
+                }
+                .about_list{
+                    top:20px;
+                    left:180px;
+                    .about_item{
+                        .about_img1{
+                            width: 80px;
+                        }
+                        .about_img2{
+                            width: 140px;
+
+                        }
+                        .about_img3{
+                            width: 80px;
+                        }
+                    }
+
+                }
+                .about_string{
+                    left: 175px;
+                    
+                }
+            }
+        }
     }
     
 }
@@ -505,6 +677,39 @@ footer{
                     .top_img-x{
                         width: 180px;
                     }
+                }
+            }
+        }
+        .about{
+            height: 172px;
+            padding-top: 20px;
+            .container{
+                
+                .about_content{
+                    .about_text{
+                        width: 233px;
+                        font-size: 8px;
+                        margin-top: 10px;
+                    }
+                    
+
+                }
+                .about_list{
+                    left:245px;
+                    .about_item{
+                        .about_img2{
+                            display:none;
+                        }
+                        .about_img3{
+                            display:none;
+                        }
+                    }
+                    
+
+                }
+                .about_string{
+                    left:240px;
+                    top:110px; 
                 }
             }
         }
