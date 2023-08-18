@@ -238,6 +238,76 @@ main .products .container .products_string {
   top: 1100px;
   left: 360px;
 }
+main .make .container {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 150px;
+  height: 1470px;
+}
+main .make .container .make_content {
+  display: inline-block;
+}
+main .make .container .make_content .make_tittle {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+main .make .container .make_content .make_text {
+  width: 391px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+main .make .container .make_list {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 766px;
+  position: absolute;
+  left: 532px;
+  row-gap: 70px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+main .make .container .make_list .make_item {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+main .make .container .make_list .make_item .make_item-text {
+  display: inline-block;
+  position: relative;
+}
+main .make .container .make_list .make_item .make_item-text .make_item-top {
+  margin: 0;
+  padding: 0;
+}
+main .make .container .make_list .make_item .make_item-text .make_item-bot {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  font-family: Yeseva One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #BEA495;
+}
+main .make .container .make_list .make_item .make_item-text .right {
+  right: 0;
+}
+main .make .container .make_string {
+  position: absolute;
+  top: 1435px;
+  left: 360px;
+}
 
 footer {
   background-color: white;
@@ -335,6 +405,44 @@ footer .container .footer_contact ul {
     width: 647px;
   }
   main .products .container .products_string {
+    left: 290px;
+  }
+  main .make .container {
+    max-width: 960px;
+    margin: 150px 20px 0 20px;
+    padding: 0px;
+    height: 1355px;
+  }
+  main .make .container .make_content {
+    width: 298px;
+  }
+  main .make .container .make_list {
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+    row-gap: 35px;
+    left: 343px;
+  }
+  main .make .container .make_list .make_item {
+    width: 300px;
+  }
+  main .make .container .make_list .make_item .make_item-text {
+    width: 141px;
+  }
+  main .make .container .make_list .make_item .container_img {
+    width: 128.686px;
+    height: 225.726px;
+    overflow: hidden;
+    position: relative;
+  }
+  main .make .container .make_list .make_item .container_img .make_img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: -15px;
+    height: 225.726px;
+  }
+  main .make .container .make_string {
+    top: 1320px;
     left: 290px;
   }
   footer .container {
@@ -472,6 +580,53 @@ footer .container .footer_contact ul {
     top: 749px;
     left: 242px;
   }
+  main .make .container {
+    max-width: 640px;
+    margin: 150px 64px 0px 0px;
+    padding: 0px;
+    padding-left: 64px;
+    height: 915px;
+  }
+  main .make .container .make_content {
+    width: 200px;
+  }
+  main .make .container .make_content .make_tittle {
+    font-size: 15px;
+  }
+  main .make .container .make_content .make_text {
+    width: 200px;
+    font-size: 10px;
+  }
+  main .make .container .make_list {
+    width: 435px;
+    row-gap: 25px;
+    left: 268px;
+  }
+  main .make .container .make_list .make_item {
+    width: 200px;
+  }
+  main .make .container .make_list .make_item .make_item-text .make_item-top {
+    width: 94.054px;
+    font-size: 8px;
+  }
+  main .make .container .make_list .make_item .make_item-text .make_item-bot {
+    font-size: 20px;
+  }
+  main .make .container .make_list .make_item .container_img {
+    width: 85.791px;
+    height: 150.484px;
+  }
+  main .make .container .make_list .make_item .container_img .make_img {
+    position: static;
+    -o-object-fit: inherit;
+       object-fit: inherit;
+    width: 85.791px;
+    height: 150.484px;
+  }
+  main .make .container .make_string {
+    top: 880px;
+    left: 268px;
+  }
   footer {
     font-size: 10px;
     line-height: 150%;
@@ -591,7 +746,14 @@ footer .container .footer_contact ul {
     left: 210px;
   }
   main .products .container {
-    height: 780px;
+    margin: 150px 10px 0px 10px;
+  }
+  main .make .container {
+    margin: 150px 10px 0px 10px;
+    padding-left: 0px;
+  }
+  main .make .container .make_list {
+    left: 200px;
   }
   footer {
     font-size: 14px;
@@ -679,6 +841,38 @@ footer .container .footer_contact ul {
     position: static;
     margin-top: 22px;
   }
+  main .make .container {
+    margin-top: 50px;
+    height: 993px;
+  }
+  main .make .container .make_content {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .make .container .make_content .make_tittle {
+    display: block;
+  }
+  main .make .container .make_content .make_text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 8px;
+  }
+  main .make .container .make_list {
+    position: static;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    width: 440px;
+  }
+  main .make .container .make_list .make_item .make_item-text .make_item-top {
+    font-size: 8px;
+  }
+  main .make .container .make_string {
+    left: 10px;
+    top: 962px;
+  }
 }
 @media (max-width: 360px) {
   main .top .container {
@@ -754,5 +948,41 @@ footer .container .footer_contact ul {
   }
   main .products .container .products_list .products_item .change {
     margin-top: 21px;
+  }
+  main .make .container {
+    height: 716px;
+  }
+  main .make .container .make_content {
+    margin-bottom: 25px;
+  }
+  main .make .container .make_list {
+    row-gap: 25px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  main .make .container .make_list .make_item {
+    width: 155px;
+  }
+  main .make .container .make_list .make_item .make_item-text {
+    width: 72.892px;
+  }
+  main .make .container .make_list .make_item .make_item-text .make_item-top {
+    font-size: 6px;
+    width: 72.892px;
+  }
+  main .make .container .make_list .make_item .make_item-text .make_item-bot {
+    font-size: 12px;
+  }
+  main .make .container .make_list .make_item .container_img {
+    width: 66.488px;
+    height: 100.323px;
+  }
+  main .make .container .make_list .make_item .container_img .make_img {
+    width: 66.488px;
+    height: 100.323px;
+  }
+  main .make .container .make_string {
+    top: 685px;
+    left: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
