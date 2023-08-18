@@ -229,6 +229,11 @@ main .products .container .products_list .products_item .products_img-btn {
   background-color: #FFBD59;
   display: block;
   margin: 0 auto;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 main .products .container .products_list .products_item .change {
   margin-top: 28px;
@@ -307,6 +312,70 @@ main .make .container .make_string {
   position: absolute;
   top: 1435px;
   left: 360px;
+}
+main .courses .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 150px;
+  height: 621px;
+  position: relative;
+}
+main .courses .container .courses_content {
+  display: inline-block;
+}
+main .courses .container .courses_content .courses_tittle {
+  margin: 0;
+  padding: 0;
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+main .courses .container .courses_content .courses_text {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  width: 369px;
+}
+main .courses .container .courses_list {
+  display: inline-flex;
+  -moz-column-gap: 112px;
+       column-gap: 112px;
+  position: absolute;
+  left: 485px;
+}
+main .courses .container .courses_list .courses_item .courses_item-top {
+  font-family: Yeseva One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 auto;
+  text-align: center;
+}
+main .courses .container .courses_list .courses_item .courses_item-bot {
+  width: 268px;
+  margin: 15 auto 24 auto;
+  text-align: center;
+}
+main .courses .container .courses_list .courses_item .courses_item-btn {
+  display: block;
+  width: 149px;
+  height: 42px;
+  background-color: #FFBD59;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 auto;
+}
+main .courses .container .courses_string {
+  position: absolute;
+  left: 360px;
+  top: 590px;
 }
 
 footer {
@@ -408,9 +477,6 @@ footer .container .footer_contact ul {
     left: 290px;
   }
   main .make .container {
-    max-width: 960px;
-    margin: 150px 20px 0 20px;
-    padding: 0px;
     height: 1355px;
   }
   main .make .container .make_content {
@@ -444,6 +510,22 @@ footer .container .footer_contact ul {
   main .make .container .make_string {
     top: 1320px;
     left: 290px;
+  }
+  main .courses .container {
+    max-width: 960px;
+    margin: 150px 20px 0 20px;
+    padding: 0px;
+  }
+  main .courses .container .courses_content .courses_text {
+    width: 300px;
+  }
+  main .courses .container .courses_list {
+    left: 330px;
+    -moz-column-gap: 63px;
+         column-gap: 63px;
+  }
+  main .courses .container .courses_string {
+    left: 300px;
   }
   footer .container {
     max-width: 960px;
@@ -627,6 +709,47 @@ footer .container .footer_contact ul {
     top: 880px;
     left: 268px;
   }
+  main .courses .container {
+    max-width: 640px;
+    margin: 150px 64px 0px 64px;
+    padding: 0px;
+    height: 466px;
+  }
+  main .courses .container .courses_content .courses_tittle {
+    font-size: 15px;
+  }
+  main .courses .container .courses_content .courses_text {
+    font-size: 10px;
+    width: 200px;
+  }
+  main .courses .container .courses_list {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    left: 200px;
+  }
+  main .courses .container .courses_list .courses_item {
+    width: 195px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-img {
+    width: 195px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-top {
+    font-size: 12px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-bot {
+    width: 195px;
+    font-size: 10px;
+    margin: 4px auto 10px auto;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-btn {
+    font-size: 12px;
+    width: 115px;
+    height: 39px;
+  }
+  main .courses .container .courses_string {
+    top: 434px;
+    left: 200px;
+  }
   footer {
     font-size: 10px;
     line-height: 150%;
@@ -755,6 +878,16 @@ footer .container .footer_contact ul {
   main .make .container .make_list {
     left: 200px;
   }
+  main .make .container .make_string {
+    left: 200px;
+  }
+  main .courses .container {
+    margin: 150px 10px 0px 10px;
+    height: 430px;
+  }
+  main .courses .container .courses_string {
+    top: 398px;
+  }
   footer {
     font-size: 14px;
     line-height: 1.2;
@@ -862,8 +995,8 @@ footer .container .footer_contact ul {
   }
   main .make .container .make_list {
     position: static;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     width: 440px;
   }
   main .make .container .make_list .make_item .make_item-text .make_item-top {
@@ -872,6 +1005,34 @@ footer .container .footer_contact ul {
   main .make .container .make_string {
     left: 10px;
     top: 962px;
+  }
+  main .courses .container {
+    height: 547px;
+  }
+  main .courses .container .courses_content {
+    width: auto;
+    display: block;
+  }
+  main .courses .container .courses_content .courses_tittle {
+    display: block;
+    margin: 0 auto;
+    width: 168px;
+    text-align: center;
+  }
+  main .courses .container .courses_content .courses_text {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  main .courses .container .courses_list {
+    position: static;
+    margin-left: 20px;
+  }
+  main .courses .container .courses_string {
+    top: 515px;
+    left: 0px;
   }
 }
 @media (max-width: 360px) {
@@ -984,5 +1145,33 @@ footer .container .footer_contact ul {
   main .make .container .make_string {
     top: 685px;
     left: 0px;
+  }
+  main .courses .container {
+    margin-top: 50px;
+    height: 1165px;
+  }
+  main .courses .container .courses_content .courses_text {
+    width: 205px;
+  }
+  main .courses .container .courses_list {
+    flex-direction: column;
+    width: 93%;
+    align-items: center;
+    row-gap: 40px;
+  }
+  main .courses .container .courses_list .courses_item {
+    width: 255px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-img {
+    width: 255px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-top {
+    margin-top: 15px;
+  }
+  main .courses .container .courses_list .courses_item .courses_item-bot {
+    margin-bottom: 26px;
+  }
+  main .courses .container .courses_string {
+    top: 1133px;
   }
 }/*# sourceMappingURL=style.css.map */
