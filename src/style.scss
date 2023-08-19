@@ -423,6 +423,90 @@ main{
             }
         }
     }
+    .team{
+        background-color: #BEA495;
+        .container{
+            background-color: #BEA495;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 10px;
+            margin-top: 150px;
+            position: relative;
+            height: 662px;
+            .team_content{ 
+                .team_tittle{
+                    color: #FFF8F3;
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    margin: 0px;
+                    padding: 0px;
+                    padding-top: 50px;
+                    padding-bottom: 15px;
+
+                }
+                .team_text{
+                    color: #FFF8F3;
+                    margin: 0px;
+                    padding: 0px;
+                    width: 391px;
+
+                }
+            }
+            .team_list{
+                display: flex;
+                position: absolute;
+                width: 715px;
+                column-gap: 75px;
+                flex-wrap: wrap;
+                row-gap: 78px; 
+                top: 61px;
+                left: 450px;  
+                .team_item{
+                    position: relative;
+                    width: 320px;
+                    .team_item-img{
+
+                    }
+                    .team_item-text{
+                        position: absolute;
+                        z-index: 1;
+                        background-color: #7B6152;
+                        width: 162.025px;
+                        right: 0px;
+                        bottom: 8px;
+                        .team_item-top{
+                            color: #FFF8F3;
+                            margin: 0px;
+                            padding: 0px;
+                            text-align: center;
+                            font-family: Yeseva One;
+                            font-size: 12.473px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-top: 14px;
+
+                        }
+                        .team_item-bot{
+                            text-align: center;
+                            color: #FFF8F3;
+                            margin: 0px;
+                            padding: 0px;
+                            font-size: 10.914px;
+                            width: 150px;
+                            margin: 0 auto;
+                            margin-bottom: 15px;
+
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
 footer{
@@ -661,6 +745,44 @@ footer{
                 }
                 .courses_string{
                     left:300px;
+                }
+            }
+        }
+        .team{
+            .container{
+                max-width: 960px;
+                margin:150px 20px 0 20px;
+                padding: 0px;
+                .team_content{
+                    width: 290px;
+                    .team_tittle{
+    
+                    }
+                    .team_text{
+                        width: 290px;
+    
+                    }
+                }
+                .team_list{
+                    column-gap: 20px;
+                    row-gap: 30px;
+                    width: 650px;
+                    left: 300px;
+                    .team_item{
+                        width: 315px;
+                        .team_item-img{
+    
+                        }
+                        .team_item-text{
+                            .team_item-top{
+    
+                            }
+                            .team_item-bot{
+                                
+                            }
+                        }
+                        
+                    }
                 }
             }
         }
@@ -936,6 +1058,52 @@ footer{
                 }
             }
         }
+        .team{
+            .container{
+                max-width: 640px;
+                margin:150px 64px 0px 64px;
+                padding: 0px;
+                height: 442px;
+                .team_content{
+                    width: 193px;
+                    .team_tittle{
+                        font-size: 15px;
+                    }
+                    .team_text{
+                        font-size: 10px;
+                        width: 193px;
+                    }
+                }
+                .team_list{
+                    column-gap: 14px;
+                    top: 50px;
+                    left: 230px;
+                    .team_item{
+                        width: 210px;
+                        height: 155px;
+                        .team_item-img{
+                            width: 142.896px;
+                            height: 155px;
+                        }
+                        .team_item-text{
+                            width: 106.329px;
+                            bottom: 5.64px;
+                            .team_item-top{
+                                font-size: 8px;
+                                margin-top: 9.8px;
+                            }
+                            .team_item-bot{
+                                font-size: 6.746px;
+                                width: 94.918px;
+                                margin-bottom: 10.7px;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     
     footer{
@@ -1188,6 +1356,37 @@ footer{
                 }
             }
         }
+        .team{
+            .container{
+                margin: 150px 10px 0px 10px;
+                height: 430px;
+                .team_content{
+                    .team_tittle{
+    
+                    }
+                    .team_text{
+    
+                    }
+                }
+                .team_list{
+                    left: 200px;
+                    .team_item{
+                        .team_item-img{
+    
+                        }
+                        .team_item-text{
+                            .team_item-top{
+    
+                            }
+                            .team_item-bot{
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     footer{
         font-size: 14px;
@@ -1414,6 +1613,48 @@ footer{
                 }
             }
         }
+        .team{
+            .container{
+                height: 530px;
+                .team_content{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    .team_tittle{
+                        display: block;
+                        padding-bottom: 10px;
+                        width: 100%;
+                    }
+                    .team_text{
+                        display: block;
+                        width: 300px;
+                        padding-bottom: 30px;
+                        margin: 0 auto;
+    
+                    }
+                }
+                .team_list{
+                    position: static;
+                    
+                    row-gap: 30px;
+                    .team_item{
+                        .team_item-img{
+    
+                        }
+                        .team_item-text{
+                            .team_item-top{
+    
+                            }
+                            .team_item-bot{
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
     }
     
 }
@@ -1611,6 +1852,45 @@ footer{
                 .courses_string{
                     top:1133px;
                     
+                }
+            }
+        }
+        .team{
+            .container{
+                height: 1140px;
+                .team_content{
+                    .team_tittle{
+    
+                    }
+                    .team_text{
+                        width: 200px;
+    
+                    }
+                }
+                .team_list{
+                    width: 300px;
+                    row-gap: 20px;
+                    margin: 0px auto;
+                    .team_item{
+                        width: 300px;
+                        height: 220px;
+                        .team_item-img{
+                            width: 204.137px;
+                            height: 220px;
+                        }
+                        .team_item-text{
+                            width: 151.899px;
+                            .team_item-top{
+                                font-size: 11.355px;
+    
+                            }
+                            .team_item-bot{
+                                font-size: 9.575px;
+                                
+                            }
+                        }
+                        
+                    }
                 }
             }
         }

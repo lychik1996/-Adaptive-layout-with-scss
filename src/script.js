@@ -34,6 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(btn=>{//dlya kazdogo elementa 
 // targetPosition = (расстояние от верхней границы видимой области браузера до верхней границы элемента)
 // + (текущее количество пикселей вертикальной прокрутки страницы)
 // - (высота заголовка)
+//or
             let targetPosition = targetElement.offsetTop -heightHeader;
 //offsetTop = rastoyanie ot verha elementa do na4ala html stranici 
             window.scrollTo({
