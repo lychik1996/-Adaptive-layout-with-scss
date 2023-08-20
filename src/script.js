@@ -88,30 +88,30 @@ rightClick.forEach((elem)=>{
     });
 });
 //sensor move
-// let touchStartX = 0;
+let touchStartX = 0;
 
-// slider.addEventListener("touchstart", (e) => {
-//     touchStartX = e.touches[0].clientX;
-//     isDragging = true;
-// });
-// slider.addEventListener("touchmove", (e) => {
-//     if (!isDragging) return;
-//     let touchEndX = e.touches[0].clientX;
-//     let diffX = touchEndX - touchStartX;
+slider.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+    isDragging = true;
+});
+slider.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    let touchEndX = e.touches[0].clientX;
+    let diffX = touchEndX - touchStartX;
 
-//     if (diffX > 30) {
-//         // Свайп вправо
-//         showSlide(currentIndex - 1);
-//     } else if (diffX < -30) {
-//         // Свайп влево
-//         showSlide(currentIndex + 1);
-//     }
+    if (diffX > 30) {
+        // Свайп вправо
+        showSlide(currentIndex - 1);
+    } else if (diffX < -30) {
+        // Свайп влево
+        showSlide(currentIndex + 1);
+    }
 
-//     isDragging = false;
-// });
-// slider.addEventListener("touchend", () => {
-//     isDragging = false;
-// });
+    isDragging = false;
+});
+slider.addEventListener("touchend", () => {
+    isDragging = false;
+});
 // Обработчики перемещения слайдов с помощью мыши
 slider.addEventListener("mousedown", (e) => {
     isDragging = true;
