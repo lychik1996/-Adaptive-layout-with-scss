@@ -1073,6 +1073,9 @@ footer .container .footer_contact ul {
     font-size: 10px;
     width: 200px;
   }
+  main .feedback .container .feedback_slider {
+    left: 240px;
+  }
   main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide {
     width: 420px;
     gap: 12px;
@@ -1102,6 +1105,8 @@ footer .container .footer_contact ul {
     width: 124px;
     height: 39px;
     font-size: 8px;
+    right: 0px;
+    left: 0px;
   }
   main .feedback .container .feedback_slider .swiper-indicator {
     width: 125px;

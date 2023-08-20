@@ -99,10 +99,10 @@ slider.addEventListener("touchmove", (e) => {
     let touchEndX = e.touches[0].clientX;
     let diffX = touchEndX - touchStartX;
 
-    if (diffX > 30) {
+    if (diffX > 0) {
         // Свайп вправо
         showSlide(currentIndex - 1);
-    } else if (diffX < -30) {
+    } else if (diffX < 0) {
         // Свайп влево
         showSlide(currentIndex + 1);
     }
