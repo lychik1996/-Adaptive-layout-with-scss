@@ -32,6 +32,7 @@ body{
     margin: 0px;
     padding: 0px; 
 }
+
 button{
     border: 0;
     border-radius: 0;
@@ -507,6 +508,147 @@ main{
             }
         }
     }
+    .feedback{
+        .container{
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 10px;
+            margin-top: 150px;
+            position: relative;
+            height: 490px;
+            .feedback_content{
+                .feedback_tittle{
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    margin: 0;
+                    padding: 0;
+                    padding-bottom: 15px;
+
+                }
+                .feedback_text{
+                    margin: 0;
+                    padding: 0;
+                    width: 374px;
+                }
+            }
+            .feedback_slider{
+                position: absolute;
+                    top: 0px;
+                    left: 500px;
+                .feedback_slider_container{
+                    overflow-x:hidden;
+                    position: relative;  
+                    .swiper-slider{
+                        display: flex;
+                        transition: transform 0.3s ease-in-out;
+                        gap: 150px;            
+                        .swiper-slide{
+                            display: flex;
+                            gap: 14px;
+                            width: 768px;
+                            position: relative;
+                            
+                            .swiper-left{
+                                height: 100%;
+                                width: 30%;
+                                position: absolute;
+                                left: 0;
+                            }
+                            .swiper-right{
+                                height: 80%;
+                                width: 30%;
+                                position: absolute;
+                                right: 0;
+                                top:0;
+                            }
+                            .feedback_item-img{
+                                width: 380px;
+                                pointer-events: none;
+                                user-select: none;
+                                height: 370px;
+                            }
+                            .feedback_item_info{
+                                width: 374px;
+                                position: relative;
+                                .feedback_item_info-link{
+                                    margin-top: 48px;
+                                    display: inline-block;
+                                    .feedback_item_info-img{ 
+                                        pointer-events: none;
+                                        user-select: none;
+                                    }
+                                }
+                                .feedback_item_info-top{
+                                    font-family: Yeseva One;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.2;
+                                    padding: 0;
+                                    margin: 12px 0px 15px 0px;
+                                    user-select: none;
+                                    cursor: default;
+        
+                                }
+                                .feedback_item_info-bot{
+                                    margin: 0;
+                                    padding: 0;
+                                    user-select: none;
+                                    cursor: default;
+                                }
+                                .feedback_item_info-btn{
+                                    font-family: Comfortaa;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    position: absolute;
+                                    background-color: #FFBD59;
+                                    width: 216px;
+                                    height: 56px;
+                                    right: 0;
+                                    bottom: 10px;
+                                    user-select: none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .swiper-indicator{
+                    display: inline-flex;
+                    width: 236px;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    position: absolute;
+                    left: 300px;
+                    bottom: -50px;     
+                    .swiper-indicator-element{
+                        background-color: #BEA495;
+                        cursor: pointer;
+                        width: 53px;
+                        height: 4px;
+                        
+                    }
+                    .swiper-indicator-element-active{         
+                        background-color: #7B6152;
+                        cursor: pointer;
+                        width: 53px;
+                        height: 4px;
+                    }
+                    
+                }
+            }
+            .feedback_string{
+                position: absolute;
+                bottom: 10px;
+                left:470px;
+            }
+        }
+    }
 }
 
 footer{
@@ -783,6 +925,73 @@ footer{
                         }
                         
                     }
+                }
+            }
+        }
+        .feedback{
+            .container{
+                max-width: 960px;
+                margin:150px 20px 0 20px;
+                padding: 0px;
+                .feedback_content{
+                    width: 300px;
+                    .feedback_tittle{
+
+                    }
+                    .feedback_text{
+                        width: 260px;
+                    }
+                }
+                .feedback_slider{
+                    left: 280px;
+                    .feedback_slider_container{
+                        .swiper-slider{
+                            .swiper-slide{
+                                width: 660px;
+                                .swiper-left{
+
+                                }
+                                .swiper-right{
+
+                                }
+                                .feedback_item-img{
+                                    width: 380px;
+                                    height: 370px;
+                                }
+                                .feedback_item_info{
+                                    width: 264px;
+                                    .feedback_item_info-link{
+                                        .feedback_item_info-link-img{
+
+                                        }
+                                    }
+                                    .feedback_item_info-top{
+
+                                    }
+                                    .feedback_item_info-bot{
+                                        
+
+                                    }
+                                    .feedback_item_info-btn{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-indicator{
+                        left:230px;
+                        .swiper-indicator-element{
+
+                        }
+                        .swiper-indicator-element-active{
+
+                        }
+                    }
+
+                }
+                .feedback_string{
+                    left: 250px;
                 }
             }
         }
@@ -1104,6 +1313,89 @@ footer{
                 }
             }
         }
+        .feedback{
+            .container{
+                max-width: 640px;
+                margin:150px 64px 0px 64px;
+                padding: 0px;
+                height: 304px;
+                .feedback_content{
+                    .feedback_tittle{
+                        font-size: 15px;
+                    }
+                    .feedback_text{
+                        font-size: 10px;
+                        width: 200px;             
+                    }
+                }
+                .feedback_slider{
+                    .feedback_slider_container{
+                        .swiper-slider{
+                            
+                            .swiper-slide{
+                                width: 420px;
+                                gap: 12px;
+                                .swiper-left{
+
+                                }
+                                .swiper-right{
+
+                                }
+                                .feedback_item-img{
+                                    width: 200px;
+                                    height: 200px;
+
+                                }
+                                .feedback_item_info{
+                                    width: 209px;
+                                    height: 232px;
+                                    .feedback_item_info-link{
+                                        margin-top: 0px;
+                                        .feedback_item_info-img{
+                                            width: 15px;
+                                            height: 15px;
+
+                                        }
+                                    }
+                                    .feedback_item_info-top{
+                                        font-size: 12px;
+
+                                    }
+                                    .feedback_item_info-bot{
+                                        font-size: 10px;
+
+                                    }
+                                    .feedback_item_info-btn{
+                                        width: 124px;
+                                        height: 39px;
+                                        font-size: 8px;
+                                                                       
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-indicator{
+                        width: 125px;
+                        left: 150px;
+                        bottom: -20px;
+                        
+                        .swiper-indicator-element{
+                            width: 28px;
+
+                        }
+                        .swiper-indicator-element-active{
+                            width: 28px;
+                            
+                        }
+                    }
+
+                }
+                .feedback_string{
+                    
+                }
+            }
+        }
     }
     
     footer{
@@ -1387,6 +1679,65 @@ footer{
                 }
             }
         }
+        .feedback{
+            .container{
+                margin: 150px 10px 0px 10px;
+                .feedback_content{
+                    .feedback_tittle{
+
+                    }
+                    .feedback_text{
+
+                    }
+                }
+                .feedback_slider{
+                    left: 200px;
+                    .feedback_slider_container{
+                        .swiper-slider{
+                            .swiper-slide{
+                                .swiper-left{
+
+                                }
+                                .swiper-right{
+
+                                }
+                                .feedback_item-img{
+
+                                }
+                                .feedback_item_info{
+                                    .feedback_item_info-link{
+                                        .feedback_item_info-img{
+
+                                        }
+                                    }
+                                    .feedback_item_info-top{
+
+                                    }
+                                    .feedback_item_info-bot{
+
+                                    }
+                                    .feedback_item_info-btn{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-indicator{
+                        .swiper-indicator-element{
+
+                        }
+                        .swiper-indicator-element-active{
+                            
+                        }
+                    }
+
+                }
+                .feedback_string{
+                    left:180px;
+                }
+            }
+        }
     }
     footer{
         font-size: 14px;
@@ -1569,6 +1920,7 @@ footer{
         .courses{
             .container{
                 height: 547px;
+                margin-top: 50px;
                 .courses_content{
                     width: auto;
                     display: block;
@@ -1616,6 +1968,7 @@ footer{
         .team{
             .container{
                 height: 530px;
+                margin-top: 50px;
                 .team_content{
                     display: block;
                     width: 100%;
@@ -1651,6 +2004,77 @@ footer{
                         }
                         
                     }
+                }
+            }
+        }
+        .feedback{
+            .container{
+                height: 411px;
+                margin-top: 50px;
+                .feedback_content{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    .feedback_tittle{
+
+                    }
+                    .feedback_text{
+                        display: block;
+                        width: 300px;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                }
+                .feedback_slider{
+                    left: 0px;
+                    position: static;
+                    .feedback_slider_container{
+                        .swiper-slider{
+                            .swiper-slide{
+                                .swiper-left{
+
+                                }
+                                .swiper-right{
+
+                                }
+                                .feedback_item-img{
+
+                                }
+                                .feedback_item_info{
+                                    .feedback_item_info-link{
+                                        
+                                        .feedback_item_info-img{
+
+                                        }
+                                    }
+                                    .feedback_item_info-top{
+
+                                    }
+                                    .feedback_item_info-bot{
+
+                                    }
+                                    .feedback_item_info-btn{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-indicator{
+                        bottom: 50px;
+                        left: 150px;
+                        .swiper-indicator-element{
+
+                        }
+                        .swiper-indicator-element-active{
+                            
+                        }
+                    }
+
+                }
+                .feedback_string{
+                    left: 0px;
                 }
             }
         }
@@ -1891,6 +2315,79 @@ footer{
                         }
                         
                     }
+                }
+            }
+        }
+        .feedback{
+            .container{
+                height: 653px;
+                .feedback_content{
+                    .feedback_tittle{
+
+                    }
+                    .feedback_text{
+
+                    }
+                }
+                .feedback_slider{
+                    
+                    .feedback_slider_container{
+                        left: 40px;
+                        .swiper-slider{
+                            height: 470px;
+                            
+                            .swiper-slide{
+                                width: 250px;
+                                gap: 0px;
+                                display: block;
+                                .swiper-left{
+
+                                }
+                                .swiper-right{
+
+                                }
+                                .feedback_item-img{
+                                    width: 250px;
+                                    height: 250px;
+                                }
+                                .feedback_item_info{
+                                    width: 250px;
+                                    text-align: center;
+                                    height: 197px;
+                                    .feedback_item_info-link{
+                                        
+                                        .feedback_item_info-img{
+
+                                        }
+                                    }
+                                    .feedback_item_info-top{
+                                        
+
+                                    }
+                                    .feedback_item_info-bot{
+                                        width: 250px;
+                                        margin:12px 0px;
+                                    }
+                                    .feedback_item_info-btn{
+                                        position: static;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .swiper-indicator{
+                        left:100px;
+                        .swiper-indicator-element{
+
+                        }
+                        .swiper-indicator-element-active{
+                            
+                        }
+                    }
+
+                }
+                .feedback_string{
+                    
                 }
             }
         }

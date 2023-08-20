@@ -1,3 +1,4 @@
+
 const menuButton =document.querySelector(".menu_button");
 const menu = document.querySelector("header div nav");
 
@@ -45,6 +46,115 @@ document.querySelectorAll('a[href^="#"]').forEach(btn=>{//dlya kazdogo elementa 
         }
     });
 });
+
+
+///add slider
+
+let slider = document.querySelector(".swiper-slider");
+let indicators = document.querySelectorAll(".swiper-indicator-element");
+let slides = document.querySelectorAll(".swiper-slide");
+let leftClick = document.querySelectorAll(".swiper-left");
+let rightClick = document.querySelectorAll(".swiper-right");
+let currentIndex = 0;
+
+// Функция для обновления индикаторов
+function updateIndicators() {
+    indicators.forEach((indicator, index) => {
+        if (index === currentIndex) {
+            indicator.setAttribute("class", "swiper-indicator-element-active");
+        } else {
+            indicator.setAttribute("class", "swiper-indicator-element");
+        }
+    });
+}
+
+// Привязываем обработчики к индикаторам
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+        showSlide(index);
+    });
+});
+
+let startX = 0;
+let isDragging = false;
+leftClick.forEach((elem)=>{
+    elem.addEventListener("click", ()=>{
+        showSlide(currentIndex-1);
+    });
+});
+rightClick.forEach((elem)=>{
+    elem.addEventListener("click",()=>{
+        showSlide(currentIndex+1);
+    });
+});
+//sensor move
+// let touchStartX = 0;
+
+// slider.addEventListener("touchstart", (e) => {
+//     touchStartX = e.touches[0].clientX;
+//     isDragging = true;
+// });
+// slider.addEventListener("touchmove", (e) => {
+//     if (!isDragging) return;
+//     let touchEndX = e.touches[0].clientX;
+//     let diffX = touchEndX - touchStartX;
+
+//     if (diffX > 30) {
+//         // Свайп вправо
+//         showSlide(currentIndex - 1);
+//     } else if (diffX < -30) {
+//         // Свайп влево
+//         showSlide(currentIndex + 1);
+//     }
+
+//     isDragging = false;
+// });
+// slider.addEventListener("touchend", () => {
+//     isDragging = false;
+// });
+// Обработчики перемещения слайдов с помощью мыши
+slider.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX;
+});
+
+slider.addEventListener("mouseup", () => {
+    isDragging = false;
+});
+
+slider.addEventListener("mouseleave", () => {
+    isDragging = false;
+});
+
+slider.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    let currentX = e.clientX;
+    let diff = currentX - startX;
+
+    if (diff > 0) {
+        // Двигаем вправо
+        showSlide(currentIndex - 1);
+    } else if (diff < 0) {
+        // Двигаем влево
+        showSlide(currentIndex + 1);
+    }
+    isDragging = false;
+});
+
+function showSlide(index) {
+    if (index < 0) {
+        index = 0;
+    } else if (index >= slides.length) {
+        index = 0;
+    } 
+    
+    let translateX = -index * (slides[0].offsetWidth + 150); // slides[0].offsetWidth =  ширина слайда
+    slider.style.transform = `translateX(${translateX}px)`;
+    currentIndex = index;
+    updateIndicators();
+}
+
+showSlide(currentIndex);
 
 
 

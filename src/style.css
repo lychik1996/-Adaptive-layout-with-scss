@@ -452,6 +452,147 @@ main .team .container .team_list .team_item .team_item-text .team_item-bot {
   margin: 0 auto;
   margin-bottom: 15px;
 }
+main .feedback .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 150px;
+  position: relative;
+  height: 490px;
+}
+main .feedback .container .feedback_content .feedback_tittle {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+main .feedback .container .feedback_content .feedback_text {
+  margin: 0;
+  padding: 0;
+  width: 374px;
+}
+main .feedback .container .feedback_slider {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+}
+main .feedback .container .feedback_slider .feedback_slider_container {
+  overflow-x: hidden;
+  position: relative;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 150px;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide {
+  display: flex;
+  gap: 14px;
+  width: 768px;
+  position: relative;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .swiper-left {
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  left: 0;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .swiper-right {
+  height: 80%;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item-img {
+  width: 380px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 370px;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info {
+  width: 374px;
+  position: relative;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-link {
+  margin-top: 48px;
+  display: inline-block;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-link .feedback_item_info-img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-top {
+  font-family: Yeseva One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 0;
+  margin: 12px 0px 15px 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-bot {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-btn {
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  background-color: #FFBD59;
+  width: 216px;
+  height: 56px;
+  right: 0;
+  bottom: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .feedback .container .feedback_slider .swiper-indicator {
+  display: inline-flex;
+  width: 236px;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  left: 300px;
+  bottom: -50px;
+}
+main .feedback .container .feedback_slider .swiper-indicator .swiper-indicator-element {
+  background-color: #BEA495;
+  cursor: pointer;
+  width: 53px;
+  height: 4px;
+}
+main .feedback .container .feedback_slider .swiper-indicator .swiper-indicator-element-active {
+  background-color: #7B6152;
+  cursor: pointer;
+  width: 53px;
+  height: 4px;
+}
+main .feedback .container .feedback_string {
+  position: absolute;
+  bottom: 10px;
+  left: 470px;
+}
 
 footer {
   background-color: white;
@@ -622,6 +763,36 @@ footer .container .footer_contact ul {
   }
   main .team .container .team_list .team_item {
     width: 315px;
+  }
+  main .feedback .container {
+    max-width: 960px;
+    margin: 150px 20px 0 20px;
+    padding: 0px;
+  }
+  main .feedback .container .feedback_content {
+    width: 300px;
+  }
+  main .feedback .container .feedback_content .feedback_text {
+    width: 260px;
+  }
+  main .feedback .container .feedback_slider {
+    left: 280px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide {
+    width: 660px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item-img {
+    width: 380px;
+    height: 370px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info {
+    width: 264px;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator {
+    left: 230px;
+  }
+  main .feedback .container .feedback_string {
+    left: 250px;
   }
   footer .container {
     max-width: 960px;
@@ -889,6 +1060,60 @@ footer .container .footer_contact ul {
     width: 94.918px;
     margin-bottom: 10.7px;
   }
+  main .feedback .container {
+    max-width: 640px;
+    margin: 150px 64px 0px 64px;
+    padding: 0px;
+    height: 304px;
+  }
+  main .feedback .container .feedback_content .feedback_tittle {
+    font-size: 15px;
+  }
+  main .feedback .container .feedback_content .feedback_text {
+    font-size: 10px;
+    width: 200px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide {
+    width: 420px;
+    gap: 12px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item-img {
+    width: 200px;
+    height: 200px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info {
+    width: 209px;
+    height: 232px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-link {
+    margin-top: 0px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-link .feedback_item_info-img {
+    width: 15px;
+    height: 15px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-top {
+    font-size: 12px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-bot {
+    font-size: 10px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-btn {
+    width: 124px;
+    height: 39px;
+    font-size: 8px;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator {
+    width: 125px;
+    left: 150px;
+    bottom: -20px;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator .swiper-indicator-element {
+    width: 28px;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator .swiper-indicator-element-active {
+    width: 28px;
+  }
   footer {
     font-size: 10px;
     line-height: 150%;
@@ -1034,6 +1259,15 @@ footer .container .footer_contact ul {
   main .team .container .team_list {
     left: 200px;
   }
+  main .feedback .container {
+    margin: 150px 10px 0px 10px;
+  }
+  main .feedback .container .feedback_slider {
+    left: 200px;
+  }
+  main .feedback .container .feedback_string {
+    left: 180px;
+  }
   footer {
     font-size: 14px;
     line-height: 1.2;
@@ -1154,6 +1388,7 @@ footer .container .footer_contact ul {
   }
   main .courses .container {
     height: 547px;
+    margin-top: 50px;
   }
   main .courses .container .courses_content {
     width: auto;
@@ -1182,6 +1417,7 @@ footer .container .footer_contact ul {
   }
   main .team .container {
     height: 530px;
+    margin-top: 50px;
   }
   main .team .container .team_content {
     display: block;
@@ -1202,6 +1438,33 @@ footer .container .footer_contact ul {
   main .team .container .team_list {
     position: static;
     row-gap: 30px;
+  }
+  main .feedback .container {
+    height: 411px;
+    margin-top: 50px;
+  }
+  main .feedback .container .feedback_content {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  main .feedback .container .feedback_content .feedback_text {
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  main .feedback .container .feedback_slider {
+    left: 0px;
+    position: static;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator {
+    bottom: 50px;
+    left: 150px;
+  }
+  main .feedback .container .feedback_string {
+    left: 0px;
   }
 }
 @media (max-width: 360px) {
@@ -1370,5 +1633,38 @@ footer .container .footer_contact ul {
   }
   main .team .container .team_list .team_item .team_item-text .team_item-bot {
     font-size: 9.575px;
+  }
+  main .feedback .container {
+    height: 653px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container {
+    left: 40px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider {
+    height: 470px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide {
+    width: 250px;
+    gap: 0px;
+    display: block;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item-img {
+    width: 250px;
+    height: 250px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info {
+    width: 250px;
+    text-align: center;
+    height: 197px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-bot {
+    width: 250px;
+    margin: 12px 0px;
+  }
+  main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item_info .feedback_item_info-btn {
+    position: static;
+  }
+  main .feedback .container .feedback_slider .swiper-indicator {
+    left: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
