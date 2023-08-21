@@ -550,12 +550,13 @@ main{
                             gap: 14px;
                             width: 768px;
                             position: relative;
-                            
                             .swiper-left{
                                 height: 100%;
                                 width: 30%;
                                 position: absolute;
                                 left: 0;
+                                -webkit-tap-highlight-color: transparent;//ybiraet podsvetky bkoka na plansheti pri nazatii 
+                                
                             }
                             .swiper-right{
                                 height: 80%;
@@ -563,6 +564,8 @@ main{
                                 position: absolute;
                                 right: 0;
                                 top:0;
+                                -webkit-tap-highlight-color: transparent;
+                                
                             }
                             .feedback_item-img{
                                 width: 380px;
@@ -647,6 +650,96 @@ main{
                 bottom: 10px;
                 left:470px;
             }
+        }
+    }
+    .certificat{
+        .container{
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 10px;
+            margin-top: 150px;
+            position: relative;
+            height: 371px;
+            .certificat_content{
+                .certificat_tittle{
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin: 0px;
+                    width: 278px;
+                }
+                .certificat_text{
+                    margin: 0px;
+                    width: 371px;
+                    margin-top: 15px;
+
+                }
+            }
+            .certificat_swiper_container{
+                position: absolute;
+                top: 0px;
+                left: 400px;
+                overflow-x:hidden;
+                .certificat_swiper_list{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    transition: transform 0.3s ease-in-out;
+                    .certificat_swiper_slide{
+                        position: relative; 
+                        user-select: none;
+                        .certificat_swiper-left{
+                            width: 30%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0px;
+                            -webkit-tap-highlight-color: transparent;
+                        }
+                        .certificat_swiper-right{
+                            width: 30%;
+                            height: 100%;
+                            position: absolute;
+                            right: 0px;
+                            -webkit-tap-highlight-color: transparent;
+                        }
+                        .certificat_swiper-img{
+                            user-select: none;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+            .certificat_swiper_indicators{
+                display: flex;
+                width: 236px;
+                position: absolute;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 4px;
+                bottom: 80px;
+                left: 640px;
+                .certificat_swiper_indicator-element{
+                    background-color: #BEA495;
+                        cursor: pointer;
+                        width: 53px;
+                        height: 4px;
+                
+                }
+                .certificat_swiper_indicator-element-active{
+                    background-color:#7B6152;
+                    cursor: pointer;
+                    width: 53px;
+                    height: 4px;
+                }
+            }
+            .certificat_string{
+                position: absolute;
+                bottom: 5px;
+                left: 390px;
+            }
+            
         }
     }
 }
@@ -993,6 +1086,45 @@ footer{
                 .feedback_string{
                     left: 250px;
                 }
+            }
+        }
+        .certificat{
+            .container{
+                .certificat_content{
+                    .certificat_tittle{
+    
+                    }
+                    .certificat_text{
+    
+                    }
+                }
+                .certificat_swiper_container{
+                    .certificat_swiper_list{
+                        .certificat_swiper_slide{
+                            .certificat_swiper-left{
+    
+                            }
+                            .certificat_swiper-right{
+    
+                            }
+                            .certificat_swiper-img{
+    
+                            }
+                        }
+                    }
+                }
+                .certificat_swiper_indicators{
+                    .certificat_swiper_indicator-element{
+                    
+                    }
+                    .certificat_swiper_indicator-element-active{
+
+                    }
+                }
+                .certificat_string{
+                    
+                }
+                
             }
         }
     }
@@ -1399,6 +1531,45 @@ footer{
                 }
             }
         }
+        .certificat{
+            .container{
+                .certificat_content{
+                    .certificat_tittle{
+    
+                    }
+                    .certificat_text{
+    
+                    }
+                }
+                .certificat_swiper_container{
+                    .certificat_swiper_list{
+                        .certificat_swiper_slide{
+                            .certificat_swiper-left{
+    
+                            }
+                            .certificat_swiper-right{
+    
+                            }
+                            .certificat_swiper-img{
+    
+                            }
+                        }
+                    }
+                }
+                .certificat_swiper_indicators{
+                    .certificat_swiper_indicator-element{
+                    
+                    }
+                    .certificat_swiper_indicator-element-active{
+
+                    }
+                }
+                .certificat_string{
+                    
+                }
+                
+            }
+        }
     }
     
     footer{
@@ -1741,6 +1912,45 @@ footer{
                 }
             }
         }
+        .certificat{
+            .container{
+                .certificat_content{
+                    .certificat_tittle{
+    
+                    }
+                    .certificat_text{
+    
+                    }
+                }
+                .certificat_swiper_container{
+                    .certificat_swiper_list{
+                        .certificat_swiper_slide{
+                            .certificat_swiper-left{
+    
+                            }
+                            .certificat_swiper-right{
+    
+                            }
+                            .certificat_swiper-img{
+    
+                            }
+                        }
+                    }
+                }
+                .certificat_swiper_indicators{
+                    .certificat_swiper_indicator-element{
+                    
+                    }
+                    .certificat_swiper_indicator-element-active{
+
+                    }
+                }
+                .certificat_string{
+                    
+                }
+                
+            }
+        }
     }
     footer{
         font-size: 14px;
@@ -2081,6 +2291,45 @@ footer{
                 }
             }
         }
+        .certificat{
+            .container{
+                .certificat_content{
+                    .certificat_tittle{
+    
+                    }
+                    .certificat_text{
+    
+                    }
+                }
+                .certificat_swiper_container{
+                    .certificat_swiper_list{
+                        .certificat_swiper_slide{
+                            .certificat_swiper-left{
+    
+                            }
+                            .certificat_swiper-right{
+    
+                            }
+                            .certificat_swiper-img{
+    
+                            }
+                        }
+                    }
+                }
+                .certificat_swiper_indicators{
+                    .certificat_swiper_indicator-element{
+                    
+                    }
+                    .certificat_swiper_indicator-element-active{
+
+                    }
+                }
+                .certificat_string{
+                    
+                }
+                
+            }
+        }
         
     }
     
@@ -2392,6 +2641,45 @@ footer{
                 .feedback_string{
                     
                 }
+            }
+        }
+        .certificat{
+            .container{
+                .certificat_content{
+                    .certificat_tittle{
+    
+                    }
+                    .certificat_text{
+    
+                    }
+                }
+                .certificat_swiper_container{
+                    .certificat_swiper_list{
+                        .certificat_swiper_slide{
+                            .certificat_swiper-left{
+    
+                            }
+                            .certificat_swiper-right{
+    
+                            }
+                            .certificat_swiper-img{
+    
+                            }
+                        }
+                    }
+                }
+                .certificat_swiper_indicators{
+                    .certificat_swiper_indicator-element{
+                    
+                    }
+                    .certificat_swiper_indicator-element-active{
+
+                    }
+                }
+                .certificat_string{
+                    
+                }
+                
             }
         }
     }

@@ -16,6 +16,15 @@ document.addEventListener("click", e=>{
     }
 })
 
+//ybiraem peretaskivanie kartinok
+const imgs = document.querySelectorAll("img");
+imgs.forEach((img)=>{
+    img.addEventListener('dragstart',(e)=>{
+        e.preventDefault();
+    })
+})
+
+
 
 //scroll in section href
 
@@ -155,6 +164,120 @@ function showSlide(index) {
 }
 
 showSlide(currentIndex);
+
+//slider for certificat
+
+let certificatList =document.querySelector(".certificat_swiper_list");
+let certificatSlides =document.querySelectorAll(".certificat_swiper_slide");
+let certificatIndicators =document.querySelectorAll(".certificat_swiper_indicator-element");
+let certificatLeft =document.querySelectorAll(".certificat_swiper-left");
+let certificatRight =document.querySelectorAll(".certificat_swiper-right");
+
+let certificatCurrentIndex = 0;
+// function updateIndicators() {
+//     indicators.forEach((indicator, index) => {
+//         if (index === currentIndex) {
+//             indicator.setAttribute("class", "swiper-indicator-element-active");
+//         } else {
+//             indicator.setAttribute("class", "swiper-indicator-element");
+//         }
+//     });
+// }
+function certificatUpdateIndicators() {
+    certificatIndicators.forEach((indicator, index) => {     
+        if (index === certificatCurrentIndex) {
+            indicator.setAttribute("class","certificat_swiper_indicator-element-active");
+        } else {
+            indicator.setAttribute("class","certificat_swiper_indicator-element");
+        }
+    });
+}
+
+certificatIndicators.forEach((indicator, index)=>{
+    indicator.addEventListener("click", ()=>{
+        certificatShowSlide(index);
+    });
+});
+//slide left
+certificatLeft.forEach((left)=>{
+    left.addEventListener("click", ()=>{
+        certificatShowSlide(certificatCurrentIndex-1);
+    })
+})
+//slide right
+certificatRight.forEach((right)=>{
+    right.addEventListener("click", ()=>{
+        certificatShowSlide(certificatCurrentIndex+1);
+    })
+})
+// Пересування за допомогою миші
+let certificatIsDragging = false;
+let certificatStartX = 0;
+
+certificatList.addEventListener('mousedown', (e) => {
+    certificatIsDragging = true;
+    certificatStartX = e.clientX;
+});
+
+certificatList.addEventListener("mouseup", () => {
+    certificatIsDragging = false;
+});
+
+certificatList.addEventListener("mouseleave", () => {
+    certificatIsDragging = false;
+});
+
+certificatList.addEventListener("mousemove", (e) => {
+    if (!certificatIsDragging) return;
+    let currentX = e.clientX;
+    let diff = currentX - certificatStartX;
+    if (diff < 0) {
+        certificatShowSlide(certificatCurrentIndex + 1);
+    } else if (diff > 0) {
+        certificatShowSlide(certificatCurrentIndex - 1);
+    }
+    certificatIsDragging = false;
+});
+
+// Пересування за допомогою тача
+let certificatTouchStartX = 0;
+
+certificatList.addEventListener("touchstart", (e) => {
+    certificatTouchStartX = e.touches[0].clientX;
+    certificatIsDragging = true;
+});
+
+certificatList.addEventListener("touchmove", (e) => {
+    if (!certificatIsDragging) return;
+    let touchEndX = e.touches[0].clientX;
+    let diffX = touchEndX - certificatTouchStartX;
+    if (diffX < 0) {
+        certificatShowSlide(certificatCurrentIndex + 1);
+    } else if (diffX > 0) {
+        certificatShowSlide(certificatCurrentIndex - 1);
+    }
+    certificatIsDragging = false;
+});
+
+certificatList.addEventListener("touchend", () => {
+    certificatIsDragging = false;
+});
+
+
+function certificatShowSlide(index){
+    if(index < 0){
+        index = 0;
+    } else if(index >= certificatSlides.length){
+        index = 0;
+    }
+    let translateX = -index*(certificatSlides[0].offsetWidth + 20);
+    certificatList.style.transform = `translateX(${translateX}px)`;
+    certificatCurrentIndex = index;
+    certificatUpdateIndicators();
+}
+certificatShowSlide(certificatCurrentIndex);
+
+
 
 
 

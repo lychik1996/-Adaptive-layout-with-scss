@@ -500,6 +500,7 @@ main .feedback .container .feedback_slider .feedback_slider_container .swiper-sl
   width: 30%;
   position: absolute;
   left: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .swiper-right {
   height: 80%;
@@ -507,6 +508,7 @@ main .feedback .container .feedback_slider .feedback_slider_container .swiper-sl
   position: absolute;
   right: 0;
   top: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 main .feedback .container .feedback_slider .feedback_slider_container .swiper-slider .swiper-slide .feedback_item-img {
   width: 380px;
@@ -592,6 +594,93 @@ main .feedback .container .feedback_string {
   position: absolute;
   bottom: 10px;
   left: 470px;
+}
+main .certificat .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 150px;
+  position: relative;
+  height: 371px;
+}
+main .certificat .container .certificat_content .certificat_tittle {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  width: 278px;
+}
+main .certificat .container .certificat_content .certificat_text {
+  margin: 0px;
+  width: 371px;
+  margin-top: 15px;
+}
+main .certificat .container .certificat_swiper_container {
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  overflow-x: hidden;
+}
+main .certificat .container .certificat_swiper_container .certificat_swiper_list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide .certificat_swiper-left {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide .certificat_swiper-right {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide .certificat_swiper-img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+main .certificat .container .certificat_swiper_indicators {
+  display: flex;
+  width: 236px;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 4px;
+  bottom: 80px;
+  left: 640px;
+}
+main .certificat .container .certificat_swiper_indicators .certificat_swiper_indicator-element {
+  background-color: #BEA495;
+  cursor: pointer;
+  width: 53px;
+  height: 4px;
+}
+main .certificat .container .certificat_swiper_indicators .certificat_swiper_indicator-element-active {
+  background-color: #7B6152;
+  cursor: pointer;
+  width: 53px;
+  height: 4px;
+}
+main .certificat .container .certificat_string {
+  position: absolute;
+  bottom: 5px;
+  left: 390px;
 }
 
 footer {
