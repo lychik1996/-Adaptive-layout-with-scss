@@ -742,6 +742,122 @@ main{
             
         }
     }
+    .question{
+
+    }
+    .promo{
+        .container{   
+            margin: 0 auto;
+            margin-top: 150px;
+            height: 330px;
+            width: 1440px;  
+            background-image: url(./img/promo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            .container_content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 990px;
+                margin: 0 auto;
+                .promo_text{
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: #ffffff;
+                    height: 46px;
+                    
+                }
+                .promo_link{
+                    
+                    .promo_btn{
+                        width: 170px;
+                        height: 50px;
+                        text-align: center;
+                        background-color: #FFBD59;
+                        font-family: Comfortaa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .form{
+        .container{
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 10px;
+            margin-top: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            padding-bottom: 50px;
+            .container_form{
+                width: 664px;
+                height: 440px;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                justify-content:center;
+                padding-left: 42px;
+                box-shadow: 0px 0px 10px rgb(210, 209, 209);
+                .form-text{
+                    font-family: Yeseva One;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 0 auto;
+                    margin: 0 0;
+
+                }
+                .form_input{
+                    width: 90%;
+                    .form-input{
+                        width: 100%;
+                        height: 50px;
+                        display: block;
+                        border: none;
+                        border-bottom: 1px solid black;
+                    }
+                    .form-input::placeholder{
+                        color: #B3B3B3;
+                        font-family: Comfortaa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                }
+                .form-btn{
+                    width: 170px;
+                    height: 50px;
+                    background-color: #FFBD59;
+                    font-family: Comfortaa;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+            .form-img{
+
+            }
+        }
+    }
 }
 
 footer{
@@ -1135,6 +1251,55 @@ footer{
                     left: 245px;
                 }
                 
+            }
+        }
+        .promo{
+            .container{
+                width: 996px;
+                height: 332px;
+                .container_content{
+                    width: 836px;
+                    .promo_text{
+                        width: 553px;
+                    }
+                    .promo_link{
+                        .promo_btn{
+                        
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .form{
+            .container{
+                max-width: 960px;
+                margin:150px 20px 0 20px;
+                padding-left: 0px;
+                gap: 30px;
+                .container_form{
+                    width: 592px;
+                    padding-left: 10px;
+                    height: 440px;
+                    .form-text{
+    
+                    }
+                    .form_input{
+                        
+                        .form_input{
+
+                        }
+    
+                    }
+                    .form-btn{
+                        margin-top: -10px;
+                    }
+                }
+                .form-img{
+                    width: 335px;
+                    height: 510px;
+    
+                }
             }
         }
     }
@@ -1592,6 +1757,64 @@ footer{
                 
             }
         }
+        .promo{
+            .container{
+                width: 767px;
+                height: 150px;
+                background-image: url(./img/promo-m.png);
+                .container_content{
+                    width: 500px;
+                    
+                    .promo_text{
+                        width: 270px;
+                        font-size: 15px;
+                    }
+                    .promo_link{
+                        .promo_btn{
+                            font-size: 12px;
+                            width: 125px;
+                            height: 40px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .form{
+            .container{
+                max-width: 640px;
+                margin:150px 64px 0px 64px;
+                padding-left: 0px;
+                gap: 15px;
+                .container_form{
+                    width: 440px;
+                    height: 277px;
+                    gap: 20px;
+                    .form-text{
+                        font-size: 15px;
+    
+                    }
+                    .form_input{
+                        .form-input{
+
+                        }
+                        .form-input::placeholder{
+                            font-size: 8px;
+                        }
+    
+                    }
+                    .form-btn{
+                        margin-top: 0px;
+    
+                    }
+                }
+                .form-img{
+                    width: 187px;
+                    height: 285px;
+    
+                }
+            }
+        }
     }
     
     footer{
@@ -1975,6 +2198,47 @@ footer{
                     left: 180px;
                 }
                 
+            }
+        }
+        .promo{
+            .container{
+                width: 640px;
+                .container_content{
+                    width: 430px;
+                    margin-left: 50px;
+                    .promo_text{
+
+                    }
+                    .promo_link{
+                        .promo_btn{
+                        
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .form{
+            .container{
+                margin: 150px 10px 0px 10px;
+                .container_form{
+                    .form-text{
+    
+                    }
+                    .form_input{
+                        .form_input{
+
+                        }
+                        
+    
+                    }
+                    .form-btn{
+    
+                    }
+                }
+                .form-img{
+    
+                }
             }
         }
     }
@@ -2366,6 +2630,52 @@ footer{
                 
             }
         }
+        .promo{
+            .container{
+                width: 480px;
+                height: 120px;
+                margin-top: 51px;
+                .container_content{
+                    width: 300px;
+                    margin-left: 50px;
+                    .promo_text{
+                        width: 210.296px;
+                    }
+                    .promo_link{
+                        .promo_btn{
+                            font-size: 8px;
+                            width: 78px;
+                            height: 32px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .form{
+            .container{
+                margin-top: 50px;
+                .container_form{
+                    .form-text{
+    
+                    }
+                    .form_input{
+                        .form-input{
+
+                        }
+    
+                    }
+                    .form-btn{
+                        font-size: 8px;
+                        width: 85px;
+                        height: 40px;
+                    }
+                }
+                .form-img{
+                    display: none;
+                }
+            }
+        }
         
     }
     
@@ -2721,6 +3031,47 @@ footer{
                     
                 }
                 
+            }
+        }
+        .promo{
+            .container{
+                width: 361px;
+                height: 120px;
+                background-image: url(./img/promo-s.png);
+                .container_content{
+                    width: 330px;
+                    margin-left: 5px;
+                    .promo_text{
+
+                    }
+                    .promo_link{
+                        .promo_btn{
+                        
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .form{
+            .container{
+                .container_form{
+                    .form-text{
+    
+                    }
+                    .form_input{
+                        .form-input{
+
+                        }
+    
+                    }
+                    .form-btn{
+    
+                    }
+                }
+                .form-img{
+    
+                }
             }
         }
     }

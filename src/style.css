@@ -682,7 +682,112 @@ main .certificat .container .certificat_string {
   bottom: 5px;
   left: 390px;
 }
-
+main .promo .container {
+  margin: 0 auto;
+  margin-top: 150px;
+  height: 330px;
+  width: 1440px;
+  background-image: url(./img/promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+main .promo .container .container_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 990px;
+  margin: 0 auto;
+}
+main .promo .container .container_content .promo_text {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+  height: 46px;
+}
+main .promo .container .container_content .promo_link .promo_btn {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  background-color: #FFBD59;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+main .form .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+main .form .container .container_form {
+  width: 664px;
+  height: 440px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  padding-left: 42px;
+  box-shadow: 0px 0px 10px rgb(210, 209, 209);
+}
+main .form .container .container_form .form-text {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 auto;
+  margin: 0 0;
+}
+main .form .container .container_form .form_input {
+  width: 90%;
+}
+main .form .container .container_form .form_input .form-input {
+  width: 100%;
+  height: 50px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+}
+main .form .container .container_form .form_input .form-input::-moz-placeholder {
+  color: #B3B3B3;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .form .container .container_form .form_input .form-input::placeholder {
+  color: #B3B3B3;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .form .container .container_form .form-btn {
+  width: 170px;
+  height: 50px;
+  background-color: #FFBD59;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 footer {
   background-color: white;
 }
@@ -909,6 +1014,34 @@ footer .container .footer_contact ul {
   }
   main .certificat .container .certificat_string {
     left: 245px;
+  }
+  main .promo .container {
+    width: 996px;
+    height: 332px;
+  }
+  main .promo .container .container_content {
+    width: 836px;
+  }
+  main .promo .container .container_content .promo_text {
+    width: 553px;
+  }
+  main .form .container {
+    max-width: 960px;
+    margin: 150px 20px 0 20px;
+    padding-left: 0px;
+    gap: 30px;
+  }
+  main .form .container .container_form {
+    width: 592px;
+    padding-left: 10px;
+    height: 440px;
+  }
+  main .form .container .container_form .form-btn {
+    margin-top: -10px;
+  }
+  main .form .container .form-img {
+    width: 335px;
+    height: 510px;
   }
   footer .container {
     max-width: 960px;
@@ -1267,6 +1400,50 @@ footer .container .footer_contact ul {
   main .certificat .container .certificat_string {
     left: 200px;
   }
+  main .promo .container {
+    width: 767px;
+    height: 150px;
+    background-image: url(./img/promo-m.png);
+  }
+  main .promo .container .container_content {
+    width: 500px;
+  }
+  main .promo .container .container_content .promo_text {
+    width: 270px;
+    font-size: 15px;
+  }
+  main .promo .container .container_content .promo_link .promo_btn {
+    font-size: 12px;
+    width: 125px;
+    height: 40px;
+  }
+  main .form .container {
+    max-width: 640px;
+    margin: 150px 64px 0px 64px;
+    padding-left: 0px;
+    gap: 15px;
+  }
+  main .form .container .container_form {
+    width: 440px;
+    height: 277px;
+    gap: 20px;
+  }
+  main .form .container .container_form .form-text {
+    font-size: 15px;
+  }
+  main .form .container .container_form .form_input .form-input::-moz-placeholder {
+    font-size: 8px;
+  }
+  main .form .container .container_form .form_input .form-input::placeholder {
+    font-size: 8px;
+  }
+  main .form .container .container_form .form-btn {
+    margin-top: 0px;
+  }
+  main .form .container .form-img {
+    width: 187px;
+    height: 285px;
+  }
   footer {
     font-size: 10px;
     line-height: 150%;
@@ -1429,6 +1606,16 @@ footer .container .footer_contact ul {
   }
   main .certificat .container .certificat_string {
     left: 180px;
+  }
+  main .promo .container {
+    width: 640px;
+  }
+  main .promo .container .container_content {
+    width: 430px;
+    margin-left: 50px;
+  }
+  main .form .container {
+    margin: 150px 10px 0px 10px;
   }
   footer {
     font-size: 14px;
@@ -1654,6 +1841,34 @@ footer .container .footer_contact ul {
   main .certificat .container .certificat_string {
     left: 0px;
   }
+  main .promo .container {
+    width: 480px;
+    height: 120px;
+    margin-top: 51px;
+  }
+  main .promo .container .container_content {
+    width: 300px;
+    margin-left: 50px;
+  }
+  main .promo .container .container_content .promo_text {
+    width: 210.296px;
+  }
+  main .promo .container .container_content .promo_link .promo_btn {
+    font-size: 8px;
+    width: 78px;
+    height: 32px;
+  }
+  main .form .container {
+    margin-top: 50px;
+  }
+  main .form .container .container_form .form-btn {
+    font-size: 8px;
+    width: 85px;
+    height: 40px;
+  }
+  main .form .container .form-img {
+    display: none;
+  }
 }
 @media (max-width: 360px) {
   main .top .container {
@@ -1863,5 +2078,14 @@ footer .container .footer_contact ul {
     position: static;
     margin: 0 auto;
     margin-top: 20px;
+  }
+  main .promo .container {
+    width: 361px;
+    height: 120px;
+    background-image: url(./img/promo-s.png);
+  }
+  main .promo .container .container_content {
+    width: 330px;
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
