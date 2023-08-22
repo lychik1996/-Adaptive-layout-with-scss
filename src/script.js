@@ -277,7 +277,43 @@ function certificatShowSlide(index){
 }
 certificatShowSlide(certificatCurrentIndex);
 
+//accardion click
+const accordionBtn = document.querySelectorAll(".accordion_tittle");
 
+accordionBtn.forEach((btn)=>{
+    btn.addEventListener("click", ()=>{
+        toggleAccordion(btn);
+    })
+})
+
+function toggleAccordion(btn){
+    let accordionText = btn.nextElementSibling;//получение следующего елемента после btn в html
+    let img = btn.querySelector("img");
+
+    img.classList.toggle("rotate");//dobavlyaet ili ydalyaet class v zavisimosti ot ego nalichiya
+
+    if(accordionText){
+        accordionText.style.display = (accordionText.style.display === "block") ? "none" : "block";
+    }
+};
+document.addEventListener("click", e=>{
+    const target = e.target;
+    if(!menu.contains(target)&&!menuButton.contains(target)){
+        menu.setAttribute('class', "menu");
+    }
+})
+
+const accordion = document.querySelector(".accordion");
+
+document.addEventListener("click", e=>{
+    let target = e.target;
+    let accordionText = document.querySelectorAll(".accordion_text");
+    if(!accordion.contains(target)){
+        accordionText.forEach(text=>{
+            text.style.display = "none";
+        })  
+    }  
+})
 
 
 

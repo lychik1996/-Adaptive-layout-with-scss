@@ -6,7 +6,7 @@ html{
 *,
 *::after,
 *::before{
-    list-style-type: none;
+
     box-sizing: inherit;
 }//kazdiy element nasledyetbsya ot roditelya
 a{
@@ -14,8 +14,13 @@ a{
     color: inherit;//cvet nasledyetbsya
 }
 ul{
+    list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+ol{
+    margin: 0px;
+    padding-left: 20px;
 }
 .menu_button{
     display: none;
@@ -743,6 +748,67 @@ main{
         }
     }
     .question{
+        .container{
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 10px;
+            margin-top: 150px;
+            display: flex;
+            gap: 40px;
+            .question-text{
+                
+                font-family: Yeseva One;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px;
+            }
+            .question_content{
+                .accordion{
+                    width: 750px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .accordion_item{
+                        background-color: #ffffff;
+                        box-shadow: 0px 0px 10px rgb(210, 209, 209);
+                        .accordion_tittle{ 
+                            background-color: #ffffff;
+                            font-family: Yeseva One;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            width: 100%;
+                            height: 50px;
+                            text-align: left;
+                            padding-left: 13px;
+                            position: relative;
+                            img{       
+                                position: absolute;
+                                right: 26px;   
+                                transition: transform 0.3s ease;            
+                            }
+                            img.rotate{
+                                transform: rotate(180deg);
+                            }
+                            
+                        }
+                        
+                        .accordion_text{
+                            display: none;
+                            width: 98%;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                            li{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
     }
     .promo{
@@ -1223,7 +1289,7 @@ footer{
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
                             width: 280px;
-                            height: 179px;
+                            height: 190px;
                             .certificat_swiper-left{
     
                             }
@@ -1251,6 +1317,34 @@ footer{
                     left: 245px;
                 }
                 
+            }
+        }
+        .question{
+            .container{
+                max-width: 960px;
+                margin:150px 20px 0 20px;
+                padding: 0px;
+                gap: 0px;
+                .question-text{
+
+                }
+                .question_content{
+                    .accordion{
+                        width: 610px;
+                        .accordion_item{
+                            .accordion_tittle{
+                                img{
+                                    right: 20px;
+                                }
+                            }
+                            .accordion_text{
+                                li{
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         .promo{
@@ -1757,6 +1851,48 @@ footer{
                 
             }
         }
+        .question{
+            .container{
+                width: 100%;
+                margin:150px 64px 0px 64px;
+                padding: 0px;
+                justify-content: space-around;
+                gap: 40px;
+                .question-text{
+                    font-size: 15px;    
+                }
+                .question_content{
+                    .accordion{
+                        
+                        .accordion_item{
+                            width: 440px;
+                            .accordion_tittle{
+                                font-size: 12px;
+                                height: 40px;
+                                img{
+                                    
+                                }
+                                
+                            }
+                            .third{
+                                height: 50px;
+                                white-space: normal;
+                                padding-right: 100px;
+                                img{
+                                    top:18px;
+                                }
+                            }
+                            .accordion_text{
+                                li{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
         .promo{
             .container{
                 width: 767px;
@@ -2200,6 +2336,34 @@ footer{
                 
             }
         }
+        .question{
+            .container{
+                margin: 150px 10px 0px 10px;
+                width: 100%;
+                justify-content: space-around;
+                .question-text{
+
+                }
+                .question_content{
+                    .accordion{
+                        width: 80%;
+                        .accordion_item{
+                            width: 370px;
+                            .accordion_tittle{
+                                img{
+
+                                }
+                            }
+                            .accordion_text{
+                                li{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .promo{
             .container{
                 width: 640px;
@@ -2630,6 +2794,47 @@ footer{
                 
             }
         }
+        .question{
+            .container{
+                margin-left: 10px;
+                margin-top: 50px;
+                width: auto;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                .question-text{
+
+                }
+                .question_content{
+                    
+                    .accordion{
+                        width: 100%;
+                        .accordion_item{
+                            width: 100%;
+                            .accordion_tittle{
+                                img{
+
+                                }
+                            }
+                            .third{
+                                height: 60px;
+                                white-space: normal;
+                                padding-right: 100px;
+                                overflow: hidden;
+                                img{
+                                    top:21px;
+                                }
+                            }
+                            .accordion_text{
+                                li{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .promo{
             .container{
                 width: 480px;
@@ -3033,6 +3238,29 @@ footer{
                 
             }
         }
+        .question{
+            .container{
+                .question-text{
+
+                }
+                .question_content{
+                    .accordion{
+                        .accordion_item{
+                            .accordion_tittle{
+                                img{
+
+                                }
+                            }
+                            .accordion_text{
+                                li{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .promo{
             .container{
                 width: 361px;
@@ -3055,6 +3283,7 @@ footer{
         }
         .form{
             .container{
+                margin-left: 20px;
                 .container_form{
                     .form-text{
     
