@@ -92,6 +92,9 @@ main {
   padding-top: 110px;
   overflow-x: clip;
 }
+main button {
+  color: #000;
+}
 main .top .top_inner {
   position: relative;
 }
