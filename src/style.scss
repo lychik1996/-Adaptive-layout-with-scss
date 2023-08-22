@@ -1090,30 +1090,40 @@ footer{
         }
         .certificat{
             .container{
+                max-width: 960px;
+                margin:150px 20px 0 20px;
+                padding: 0px;
+                height: 271px;
                 .certificat_content{
                     .certificat_tittle{
     
                     }
                     .certificat_text{
-    
+                        width: 262px;
                     }
                 }
                 .certificat_swiper_container{
+                    left: 300px;
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
+                            width: 280px;
+                            height: 179px;
                             .certificat_swiper-left{
     
                             }
                             .certificat_swiper-right{
     
                             }
-                            .certificat_swiper-img{
-    
+                            .certificat_swiper_slide-img{
+                                width: 280px;
+                                height: 179px;
                             }
                         }
                     }
                 }
                 .certificat_swiper_indicators{
+                    left:400px;
+                    bottom: 50px;
                     .certificat_swiper_indicator-element{
                     
                     }
@@ -1122,7 +1132,7 @@ footer{
                     }
                 }
                 .certificat_string{
-                    
+                    left: 245px;
                 }
                 
             }
@@ -1533,30 +1543,42 @@ footer{
         }
         .certificat{
             .container{
+                height: 212px;
+                max-width: 640px;
+                margin:150px 64px 0px 64px;
+                padding: 0px;
                 .certificat_content{
                     .certificat_tittle{
-    
+                        font-size: 15px;
                     }
                     .certificat_text{
-    
+                        font-size: 10px;
+                        width: 194.175px;
                     }
                 }
                 .certificat_swiper_container{
+                    left: 200px;
+                    height: 135px;
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
+                            width: 200px;
+                            height: 128px;
                             .certificat_swiper-left{
     
                             }
                             .certificat_swiper-right{
     
                             }
-                            .certificat_swiper-img{
-    
+                            .certificat_swiper_slide-img{
+                                width: 200px;
+                                height: 128px;
                             }
                         }
                     }
                 }
                 .certificat_swiper_indicators{
+                    width: 125px;
+                    left: 300px;
                     .certificat_swiper_indicator-element{
                     
                     }
@@ -1565,7 +1587,7 @@ footer{
                     }
                 }
                 .certificat_string{
-                    
+                    left: 200px;
                 }
                 
             }
@@ -1913,16 +1935,20 @@ footer{
             }
         }
         .certificat{
+            
             .container{
+                margin: 150px 10px 0px 10px;
                 .certificat_content{
+                    
                     .certificat_tittle{
     
                     }
                     .certificat_text{
-    
+                        margin-top: 10px;
                     }
                 }
                 .certificat_swiper_container{
+
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
                             .certificat_swiper-left{
@@ -1931,7 +1957,7 @@ footer{
                             .certificat_swiper-right{
     
                             }
-                            .certificat_swiper-img{
+                            .certificat_swiper_slide-img{
     
                             }
                         }
@@ -1946,7 +1972,7 @@ footer{
                     }
                 }
                 .certificat_string{
-                    
+                    left: 180px;
                 }
                 
             }
@@ -2293,15 +2319,24 @@ footer{
         }
         .certificat{
             .container{
+                margin-top: 50px;
+                height: 302px;
                 .certificat_content{
+                    width: 100%;
+                    text-align: center;
                     .certificat_tittle{
-    
+                        width: 194.175px;
+                        margin: 0 auto;
                     }
                     .certificat_text{
-    
+                        width: 194.175px;
+                        margin: 10px auto 30px auto;
                     }
                 }
                 .certificat_swiper_container{
+                    position: static;
+                    
+                    width: 420px;
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
                             .certificat_swiper-left{
@@ -2310,13 +2345,14 @@ footer{
                             .certificat_swiper-right{
     
                             }
-                            .certificat_swiper-img{
+                            .certificat_swiper_slide-img{
     
                             }
                         }
                     }
                 }
                 .certificat_swiper_indicators{
+                    left: 170px;
                     .certificat_swiper_indicator-element{
                     
                     }
@@ -2325,7 +2361,7 @@ footer{
                     }
                 }
                 .certificat_string{
-                    
+                    left: 0px;
                 }
                 
             }
@@ -2654,6 +2690,8 @@ footer{
                     }
                 }
                 .certificat_swiper_container{
+                    width: 200px;
+                    margin: 0 auto;
                     .certificat_swiper_list{
                         .certificat_swiper_slide{
                             .certificat_swiper-left{
@@ -2662,13 +2700,16 @@ footer{
                             .certificat_swiper-right{
     
                             }
-                            .certificat_swiper-img{
+                            .certificat_swiper_slide-img{
     
                             }
                         }
                     }
                 }
                 .certificat_swiper_indicators{
+                    position: static;
+                    margin: 0 auto;
+                    margin-top: 20px;
                     .certificat_swiper_indicator-element{
                     
                     }

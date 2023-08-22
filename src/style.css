@@ -883,6 +883,33 @@ footer .container .footer_contact ul {
   main .feedback .container .feedback_string {
     left: 250px;
   }
+  main .certificat .container {
+    max-width: 960px;
+    margin: 150px 20px 0 20px;
+    padding: 0px;
+    height: 271px;
+  }
+  main .certificat .container .certificat_content .certificat_text {
+    width: 262px;
+  }
+  main .certificat .container .certificat_swiper_container {
+    left: 300px;
+  }
+  main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide {
+    width: 280px;
+    height: 179px;
+  }
+  main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide .certificat_swiper_slide-img {
+    width: 280px;
+    height: 179px;
+  }
+  main .certificat .container .certificat_swiper_indicators {
+    left: 400px;
+    bottom: 50px;
+  }
+  main .certificat .container .certificat_string {
+    left: 245px;
+  }
   footer .container {
     max-width: 960px;
     margin: 0 20px;
@@ -1208,6 +1235,38 @@ footer .container .footer_contact ul {
   main .feedback .container .feedback_slider .swiper-indicator .swiper-indicator-element-active {
     width: 28px;
   }
+  main .certificat .container {
+    height: 212px;
+    max-width: 640px;
+    margin: 150px 64px 0px 64px;
+    padding: 0px;
+  }
+  main .certificat .container .certificat_content .certificat_tittle {
+    font-size: 15px;
+  }
+  main .certificat .container .certificat_content .certificat_text {
+    font-size: 10px;
+    width: 194.175px;
+  }
+  main .certificat .container .certificat_swiper_container {
+    left: 200px;
+    height: 135px;
+  }
+  main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide {
+    width: 200px;
+    height: 128px;
+  }
+  main .certificat .container .certificat_swiper_container .certificat_swiper_list .certificat_swiper_slide .certificat_swiper_slide-img {
+    width: 200px;
+    height: 128px;
+  }
+  main .certificat .container .certificat_swiper_indicators {
+    width: 125px;
+    left: 300px;
+  }
+  main .certificat .container .certificat_string {
+    left: 200px;
+  }
   footer {
     font-size: 10px;
     line-height: 150%;
@@ -1360,6 +1419,15 @@ footer .container .footer_contact ul {
     left: 200px;
   }
   main .feedback .container .feedback_string {
+    left: 180px;
+  }
+  main .certificat .container {
+    margin: 150px 10px 0px 10px;
+  }
+  main .certificat .container .certificat_content .certificat_text {
+    margin-top: 10px;
+  }
+  main .certificat .container .certificat_string {
     left: 180px;
   }
   footer {
@@ -1558,6 +1626,32 @@ footer .container .footer_contact ul {
     left: 150px;
   }
   main .feedback .container .feedback_string {
+    left: 0px;
+  }
+  main .certificat .container {
+    margin-top: 50px;
+    height: 302px;
+  }
+  main .certificat .container .certificat_content {
+    width: 100%;
+    text-align: center;
+  }
+  main .certificat .container .certificat_content .certificat_tittle {
+    width: 194.175px;
+    margin: 0 auto;
+  }
+  main .certificat .container .certificat_content .certificat_text {
+    width: 194.175px;
+    margin: 10px auto 30px auto;
+  }
+  main .certificat .container .certificat_swiper_container {
+    position: static;
+    width: 420px;
+  }
+  main .certificat .container .certificat_swiper_indicators {
+    left: 170px;
+  }
+  main .certificat .container .certificat_string {
     left: 0px;
   }
 }
@@ -1760,5 +1854,14 @@ footer .container .footer_contact ul {
   }
   main .feedback .container .feedback_slider .swiper-indicator {
     left: 100px;
+  }
+  main .certificat .container .certificat_swiper_container {
+    width: 200px;
+    margin: 0 auto;
+  }
+  main .certificat .container .certificat_swiper_indicators {
+    position: static;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
