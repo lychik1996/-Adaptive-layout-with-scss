@@ -308,7 +308,11 @@ const accordion = document.querySelector(".accordion");
 document.addEventListener("click", e=>{
     let target = e.target;
     let accordionText = document.querySelectorAll(".accordion_text");
+    let accordingImg = document.querySelectorAll(".accordion_tittle img");
     if(!accordion.contains(target)){
+        accordingImg.forEach(img=>{
+            img.removeAttribute("class");
+        })
         accordionText.forEach(text=>{
             text.style.display = "none";
         })  
