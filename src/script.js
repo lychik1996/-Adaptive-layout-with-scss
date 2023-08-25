@@ -304,11 +304,10 @@ document.addEventListener("click", e=>{
 })
 
 const accordion = document.querySelector(".accordion");
-
+let accordionText = document.querySelectorAll(".accordion_text");
+let accordingImg = document.querySelectorAll(".accordion_tittle img");
 document.addEventListener("click", e=>{
     let target = e.target;
-    let accordionText = document.querySelectorAll(".accordion_text");
-    let accordingImg = document.querySelectorAll(".accordion_tittle img");
     if(!accordion.contains(target)){
         accordingImg.forEach(img=>{
             img.removeAttribute("class");
@@ -318,6 +317,22 @@ document.addEventListener("click", e=>{
         })  
     }  
 })
+
+function hiddenAccordion(){
+    let top = accordion.offsetTop;
+    let bot =  top + accordion.offsetHeight;//offsetBottom не работает
+    if(top > window.scrollY+window.innerHeight || bot<window.scrollY){
+        accordingImg.forEach(img=>{
+            img.removeAttribute("class");
+        })
+        accordionText.forEach(text=>{
+            text.style.display = "none";
+        })
+    }
+}
+window.addEventListener("scroll", hiddenAccordion);
+
+
 
 
 
